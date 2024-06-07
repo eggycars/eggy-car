@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Play Free EGGY CAR UNBLOCKE Game - EGGY CAR GITHUB</title>
+    <title>Play Free EGGY CAR UNBLOCKE Game - EGGY CAR GITHUB</title>
     <meta name="description" content="You can play free EGGY CAR UNBLOCKED Game on Eggy Car. Play eggy car game without any restriction ads and full screen mode on your PC, Mobiles and tablets." />
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            transition: background-color 0.5s, color 0.5s;
         }
         
         header {
@@ -18,6 +19,7 @@
             color: white;
             text-align: center;
             padding: 1rem 0;
+            position: relative;
         }
         
         nav {
@@ -80,12 +82,62 @@
                 flex-direction: column;
             }
         }
+
+        /* Night mode styles */
+        body.night-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        body.night-mode header {
+            background-color: #333;
+            color: #e0e0e0;
+        }
+
+        body.night-mode nav {
+            background-color: #222;
+        }
+
+        body.night-mode nav ul li a {
+            color: #e0e0e0;
+        }
+
+        body.night-mode nav ul li a:hover {
+            background-color: #444;
+        }
+
+        body.night-mode aside {
+            background-color: #1e1e1e;
+            border-left: 1px solid #555;
+        }
+
+        body.night-mode footer {
+            background-color: #222;
+        }
+
+        #themeSwitch {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: none;
+            border: 2px solid white;
+            color: white;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        body.night-mode #themeSwitch {
+            border: 2px solid #e0e0e0;
+            color: #e0e0e0;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>Eggy Car Unblocked Game</h1>
+        <button id="themeSwitch">Switch to Night Mode</button>
     </header>
     <nav>
         <ul>
@@ -98,35 +150,23 @@
     <div class="container">
         <main>
             <h2>Welcome to Eggy Car</h2>
-            <iframe src="https://webglmath.github.io/eggy-car/" width="1200" height="500" style=""><span data-mce-type="bookmark" style="display: inline-block; width: 800px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span>
-</iframe>
-              <h1>Play Eggy Car: A Delightful Challenge</h1>
-
-    <p><strong>Eggy Car</strong> is an engaging and entertaining game that has captured the hearts of many players. This quirky game involves a car journey with a precariously balanced egg on its roof, offering a unique challenge that combines fun with a test of skill and patience. If you haven’t yet experienced the charm of <strong>Eggy Car</strong>, here’s everything you need to know about this popular game.</p>
-
-    <h2>What is Eggy Car?</h2>
-    <p><strong>Eggy Car</strong> is a simple yet addictive game where the player must drive a car while keeping an egg balanced on its roof. The objective is to travel as far as possible without letting the egg fall. The game’s straightforward premise belies its challenging nature, requiring players to carefully navigate hills and obstacles while maintaining the egg’s stability.</p>
-
-    <h2>How to Play Eggy Car</h2>
-    <p>Playing <strong>Eggy Car</strong> is easy to grasp but hard to master. The controls are intuitive: you accelerate and decelerate using the right and left arrows, respectively. The challenge lies in the terrain and the egg's tendency to roll with the car’s movements. Mastering the balance between speed and caution is key to achieving high scores in this delightful game.</p>
-
-    <h2>Eggy Car Unblocked</h2>
-    <p>For those who want to enjoy <strong>Eggy Car</strong> at school or work where access to certain websites may be restricted, <strong>Eggy Car unblocked</strong> versions are available. These versions allow you to play the game without encountering internet filters or firewalls. Simply search for "Eggy Car unblocked" to find sites that host an accessible version of the game.</p>
-
-    <h2>Eggy Car on GitHub</h2>
-    <p>Tech enthusiasts and developers may be interested in exploring <strong>Eggy Car</strong> on GitHub. The game has inspired many to look into its code, creating opportunities for learning and customization. By searching for "Eggy Car GitHub," you can find repositories that might offer insights into the game’s development or even enable you to create your own modified version of the game.</p>
-
-    <h2>Eggy Car Download</h2>
-    <p>If you prefer to play offline or want to have the game readily available on your device, you can look for <strong>Eggy Car download</strong> options. While the game is primarily available as an online browser game, some sites offer downloadable versions that you can install on your computer or mobile device. Just ensure that you download from reputable sources to avoid any security risks.</p>
-
-    <h2>Why Play Eggy Car?</h2>
-    <p><strong>Eggy Car</strong> offers a unique blend of simplicity and challenge. It’s perfect for a quick game during breaks or for extended sessions where you can try to beat your high score. The game’s physics-based mechanics make it a fun exercise in control and precision, appealing to players of all ages.</p>
-
-    <h2>Conclusion</h2>
-    <p>Whether you’re playing it online, seeking an unblocked version, exploring it on GitHub, or downloading it for offline play, <strong>Eggy Car</strong> is a delightful game that promises hours of fun. Its combination of easy-to-learn controls and challenging gameplay makes it a standout in the world of casual games. So, if you haven't tried it yet, get ready to balance that egg and enjoy the ride!</p>
-
-
-            <button id="changeColorButton">Change Background Color</button>
+            <iframe src="https://webglmath.github.io/eggy-car/" width="1200" height="500" style=""><span data-mce-type="bookmark" style="display: inline-block; width: 800px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span></iframe>
+            <h1>Play Eggy Car: A Delightful Challenge</h1>
+            <p><strong>Eggy Car</strong> is an engaging and entertaining game that has captured the hearts of many players. This quirky game involves a car journey with a precariously balanced egg on its roof, offering a unique challenge that combines fun with a test of skill and patience. If you haven’t yet experienced the charm of <strong>Eggy Car</strong>, here’s everything you need to know about this popular game.</p>
+            <h2>What is Eggy Car?</h2>
+            <p><strong>Eggy Car</strong> is a simple yet addictive game where the player must drive a car while keeping an egg balanced on its roof. The objective is to travel as far as possible without letting the egg fall. The game’s straightforward premise belies its challenging nature, requiring players to carefully navigate hills and obstacles while maintaining the egg’s stability.</p>
+            <h2>How to Play Eggy Car</h2>
+            <p>Playing <strong>Eggy Car</strong> is easy to grasp but hard to master. The controls are intuitive: you accelerate and decelerate using the right and left arrows, respectively. The challenge lies in the terrain and the egg's tendency to roll with the car’s movements. Mastering the balance between speed and caution is key to achieving high scores in this delightful game.</p>
+            <h2>Eggy Car Unblocked</h2>
+            <p>For those who want to enjoy <strong>Eggy Car</strong> at school or work where access to certain websites may be restricted, <strong>Eggy Car unblocked</strong> versions are available. These versions allow you to play the game without encountering internet filters or firewalls. Simply search for "Eggy Car unblocked" to find sites that host an accessible version of the game.</p>
+            <h2>Eggy Car on GitHub</h2>
+            <p>Tech enthusiasts and developers may be interested in exploring <strong>Eggy Car</strong> on GitHub. The game has inspired many to look into its code, creating opportunities for learning and customization. By searching for "Eggy Car GitHub," you can find repositories that might offer insights into the game’s development or even enable you to create your own modified version of the game.</p>
+            <h2>Eggy Car Download</h2>
+            <p>If you prefer to play offline or want to have the game readily available on your device, you can look for <strong>Eggy Car download</strong> options. While the game is primarily available as an online browser game, some sites offer downloadable versions that you can install on your computer or mobile device. Just ensure that you download from reputable sources to avoid any security risks.</p>
+            <h2>Why Play Eggy Car?</h2>
+            <p><strong>Eggy Car</strong> offers a unique blend of simplicity and challenge. It’s perfect for a quick game during breaks or for extended sessions where you can try to beat your high score. The game’s physics-based mechanics make it a fun exercise in control and precision, appealing to players of all ages.</p>
+            <h2>Conclusion</h2>
+            <p>Whether you’re playing it online, seeking an unblocked version, exploring it on GitHub, or downloading it for offline play, <strong>Eggy Car</strong> is a delightful game that promises hours of fun. Its combination of easy-to-learn controls and challenging gameplay makes it a standout in the world of casual games. So, if you haven't tried it yet, get ready to balance that egg and enjoy the ride!</p>
         </main>
         <aside>
             <h3>Sidebar</h3>
@@ -137,18 +177,15 @@
         <p>&copy; 2024 Eggy Car</p>
     </footer>
     <script>
-        document.getElementById('changeColorButton').addEventListener('click', function() {
-            document.body.style.backgroundColor = getRandomColor();
-        });
-
-        function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
+        const themeSwitchButton = document.getElementById('themeSwitch');
+        themeSwitchButton.addEventListener('click', function() {
+            document.body.classList.toggle('night-mode');
+            if (document.body.classList.contains('night-mode')) {
+                themeSwitchButton.textContent = 'Switch to Day Mode';
+            } else {
+                themeSwitchButton.textContent = 'Switch to Night Mode';
             }
-            return color;
-        }
+        });
     </script>
 </body>
 
