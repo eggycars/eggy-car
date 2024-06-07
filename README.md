@@ -1,2 +1,1 @@
-# eggy-car
-It's a vehicle with an egg in it! Your task is to carry the egg as far as possible without shattering it. With all those slopes, that's easier said than done. You may enhance your automobile by collecting coins.
+Eggy Car is a driving game where you drive a vehicle on the hills and balance an egg carefully on the vehicle, collect stars coins, and upgrade your vehicles.
